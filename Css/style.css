@@ -1,0 +1,77 @@
+
+#main{
+	background-color: lightblue;
+	max-width: 270px;
+	height: 700px;
+	padding: 16px;
+}
+
+.Guess {
+	border: 2px solid black;
+	padding-top: 32px;
+}
+
+.stats {
+	max-width: 10px;
+}
+
+.circle {
+border:solid 4px black;
+width: 30px;
+height: 30px;
+border-radius: 100px;
+text-align: center;
+line-height: 60px;
+margin: 5px;
+display: inline-block;
+}
+
+.smallCircle {
+border:solid 4px black;
+width: 10px;
+height: 10px;
+border-radius: 100px;
+text-align: center;
+line-height: 60px;
+margin: 0px;
+display: inline;
+float: right;
+}
+
+#red{
+background-color: red;
+}
+#green{
+background-color: green;
+}
+#blue{
+background-color: blue;
+}
+#yellow{
+background-color: yellow;
+}
+#grey{
+background-color: grey;
+}
+#white{
+background-color: white;
+}
+
+.circleCode {
+border:solid 4px grey;
+background-color: lightgrey;
+width: 30px;
+height: 30px;
+border-radius: 100px;
+text-align: center;
+line-height: 60px;
+margin: 5px;
+display: inline-block;
+}
+
+#answer {
+	position: relative;
+	bottom: 14px;
+	font-weight: bold;
+	font-size: 22px;
+}

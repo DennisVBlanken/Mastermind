@@ -1,18 +1,30 @@
 
 #main{
-	background-color: lightblue;
-	max-width: 270px;
-	height: 700px;
-	padding: 16px;
+background-color: lightblue;
+max-width: 280px;
+height: 940px;
+padding: 16px;
+}
+
+.Answer {
+border: 2px solid black;
+width: 220px;
 }
 
 .Guess {
-	border: 2px solid black;
-	padding-top: 32px;
+border: 2px solid black;
+padding: 6px;
+padding-bottom: 2px;
+width: 260px;
+height: 60px;
 }
 
 .stats {
-	max-width: 10px;
+display: inline-block;
+position: relative;
+bottom: 8px;
+padding-left: 6px;
+padding-top: 6px;
 }
 
 .circle {
@@ -33,9 +45,14 @@ height: 10px;
 border-radius: 100px;
 text-align: center;
 line-height: 60px;
-margin: 0px;
+margin: 1px;
 display: inline;
 float: right;
+}
+
+.position {
+	position: relative;
+	top: 20px;
 }
 
 #red{
@@ -70,8 +87,8 @@ display: inline-block;
 }
 
 #answer {
-	position: relative;
-	bottom: 14px;
-	font-weight: bold;
-	font-size: 22px;
+position: relative;
+bottom: 14px;
+font-weight: bold;
+font-size: 22px;
 }

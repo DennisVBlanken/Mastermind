@@ -1,9 +1,25 @@
 
+body {
+background-color: lightgrey;
+}
+
+button{
+margin: 10px;
+}
+
 #main{
 background-color: lightblue;
 max-width: 280px;
-height: 940px;
+height: 980px;
 padding: 16px;
+}
+
+#outline {
+background-color: blue;
+max-width: 300px;
+height: 1020px;
+padding: 10px;
+margin: 0 auto;
 }
 
 .Answer {

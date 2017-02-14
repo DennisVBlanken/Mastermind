@@ -13,6 +13,7 @@ var Status3 = document.getElementById("Status3");
 var Status4 = document.getElementById("Status4");
 var myArray = ['red', 'green', 'blue', 'yellow', 'grey', 'white'];
 var theCode = [myArray[Math.floor(Math.random() * myArray.length)], myArray[Math.floor(Math.random() * myArray.length)], myArray[Math.floor(Math.random() * myArray.length)], myArray[Math.floor(Math.random() * myArray.length)]];
+var Found = 0;
 console.log(theCode);
 
 //all functions
@@ -42,7 +43,35 @@ function setcolor4(ele) {
 }
 
 function CheckAnswer() {
+	// put the Guesses in an array
 	var Guesses = [Guess1, Guess2, Guess3, Guess4];
+	// check for how many of the guesses are in the code
+	console.log(found1, found2, found3, found4);
+	if (theCode.includes(Guesses[0])) { Found = Number(Found) + 1}
+	if (theCode.includes(Guesses[1])) { Found = Number(Found) + 1}
+	if (theCode.includes(Guesses[2])) { Found = Number(Found) + 1}
+	if (theCode.includes(Guesses[3])) { Found = Number(Found) + 1}
+	console.log(Found)
+	// make the small circles white if there are any
+	if (Found === 1) {
+	Status2.style.background = "white";
+	}
+	if (Found === 2) {
+	Status2.style.background = "white";
+	Status1.style.background = "white";
+	}
+	if (Found === 3) {
+	Status2.style.background = "white";
+	Status1.style.background = "white";
+	Status4.style.background = "white";
+	}
+	if (Found === 4) {
+	Status2.style.background = "white";
+	Status1.style.background = "white";
+	Status4.style.background = "white";
+	Status3.style.background = "white";
+	}
+	// check for how many guesses are in the correct spot
 	if (Guesses[0] === theCode[0]) {
 		console.log("Guess1 is correct");
 		status = Number(status) + 1;
@@ -62,9 +91,8 @@ function CheckAnswer() {
 	if (Guesses[0,1,2,3] === theCode[0,1,2,3]) {
 		console.log("You Win!!");
 	}
-	console.log(status);
+	// make the small circles red if there are any correct
 	if (status === "1") {
-		console.log(Status1)
 		Status2.style.background = "red";
 	}
 	if (status === "2") {
@@ -82,9 +110,5 @@ function CheckAnswer() {
 		Status3.style.background = "red";
 		Status4.style.background = "red";
 	}
-	var found1 = theCode.includes(Guesses[0]);
-	var found2 = theCode.includes(Guesses[1]);
-	var found3 = theCode.includes(Guesses[2]);
-	var found4 = theCode.includes(Guesses[3]);
-	console.log(found1, found2, found3, found4);
+
 }
